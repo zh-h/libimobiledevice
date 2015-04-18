@@ -83,3 +83,9 @@ struct idevice_private {
 };
 
 #endif
+
+#ifdef _MSC_VER
+#define strdup _strdup
+#define inline __inline
+#define _CRT_SECURE_NO_WARNINGS
+#endif
