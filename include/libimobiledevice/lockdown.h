@@ -384,7 +384,7 @@ LIBIMOBILEDEVICE_API_WIN32 lockdownd_error_t lockdownd_goodbye(lockdownd_client_
  * @param label The label to set or NULL to disable sending a label
  *
  */
-void lockdownd_client_set_label(lockdownd_client_t client, const char *label);
+LIBIMOBILEDEVICE_API_WIN32 void lockdownd_client_set_label(lockdownd_client_t client, const char *label);
 
 /**
  * Returns the unique id of the device from lockdownd.
