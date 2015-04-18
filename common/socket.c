@@ -23,19 +23,25 @@
 #include <config.h>
 #endif
 
+#ifdef _MSC_VER
+#define __func__ __FUNCTION__
+#define _CRT_SECURE_NO_WARNINGS
+#endif
+
 #include <stdio.h>
 #include <stddef.h>
 #include <stdlib.h>
 #include <string.h>
-#include <unistd.h>
 #include <errno.h>
-#include <sys/time.h>
 #include <sys/stat.h>
 #ifdef WIN32
+#define _WINSOCK_DEPRECATED_NO_WARNINGS
 #include <winsock2.h>
 #include <windows.h>
 static int wsa_init = 0;
 #else
+#include <unistd.h>
+#include <sys/time.h>
 #include <sys/socket.h>
 #include <sys/un.h>
 #include <netinet/in.h>
