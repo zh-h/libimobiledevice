@@ -170,7 +170,7 @@ LIBIMOBILEDEVICE_API_WIN32 house_arrest_error_t house_arrest_get_result(house_ar
  *     an afc client, or an AFC_E_* error code returned by
  *     afc_client_new_with_service_client().
  */
-afc_error_t afc_client_new_from_house_arrest_client(house_arrest_client_t client, afc_client_t *afc_client);
+LIBIMOBILEDEVICE_API_WIN32 afc_error_t afc_client_new_from_house_arrest_client(house_arrest_client_t client, afc_client_t *afc_client);
 
 #ifdef __cplusplus
 }
