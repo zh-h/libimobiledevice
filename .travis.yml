@@ -31,4 +31,4 @@ deploy:
   on:
     tags: true
   api-key:
-    secure: fHySwLyzfdgPXGkbnKjp0s+KKVU3UU0G9ZKQakd2pluedlqbtO4SFF7kqXr+q0wZPmea/wcXNlqJK0+0JmyAB8xonjr2EoA3oTg6NTpkpkEjfAmUqc9JoHDY8nKchVQ8jhuUl8RCHWHAK78Yt1SBqjk0+R+3mR5ZcY9YAQhKrPo=
+    secure: FmxWArJ3UBoe9/rwvAUCLrhKTctJ3ur7QS0Ho9wGkKHKQByNuB0cI1kruPpu3faTxGgBwVNH92asACGboyfhSejE/qAG8BdLA0z2+2jRJ/q0jglt/kqDcx3DkNq+eMJpGT/btmYiyD8bkKfLbwzpoEpbdrjydCMq3l0i868avk0=
