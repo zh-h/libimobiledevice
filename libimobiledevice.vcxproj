@@ -125,8 +125,8 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>C:\Users\Frederik\Source\libimobiledevice-win32\libusbmuxd\Win32\Debug;C:\Users\Frederik\Source\libimobiledevice-win32\libplist\Win32\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>libusbmuxd.lib;libplist.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>packages\libxml2.2.7.8.7\build\native\lib\v110\Win32\Release\dynamic\cdecl;packages\libiconv.1.14.0.11\build\native\lib\v110\Win32\Release\dynamic\cdecl;packages\libusbmuxd.1.0.10\build\native\lib\Win32\v120\Debug;packages\libplist.1.12\build\native\lib\Win32\v120\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libiconv.lib;libxml2.lib;ws2_32.lib;libusbmuxd.lib;libplist.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
