@@ -24,6 +24,10 @@
 #include <config.h>
 #endif
 
+#ifdef _MSC_VER
+#include "src\msc_config.h"
+#endif
+
 #include <stdio.h>
 #include <stdint.h>
 #include <stdlib.h>
@@ -34,7 +38,6 @@
 #ifndef WIN32
 #include <pwd.h>
 #endif
-#include <unistd.h>
 #include <usbmuxd.h>
 #ifdef HAVE_OPENSSL
 #include <openssl/pem.h>

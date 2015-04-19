@@ -23,15 +23,29 @@
 #include <config.h>
 #endif
 
+#ifdef _MSC_VER
+#include "src\msc_config.h"
+#endif
+
 #include <stdarg.h>
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
+
+#ifdef _MSC_VER
+#include <winsock2.h>
+#else
 #include <sys/time.h>
+#endif
+
 #include <inttypes.h>
 #include <ctype.h>
 
 #include "utils.h"
+
+#ifdef _MSC_VER
+#include "src\msc_compat.h"
+#endif
 
 #ifndef HAVE_STPCPY
 /**

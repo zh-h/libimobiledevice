@@ -26,13 +26,16 @@
 #include <config.h>
 #endif
 
+#ifdef _MSC_VER
+#include "msc_config.h"
+#endif
+
 #include <string.h>
 #include <stdlib.h>
 #define _GNU_SOURCE 1
 #define __USE_GNU 1
 #include <stdio.h>
 #include <ctype.h>
-#include <unistd.h>
 #ifdef HAVE_OPENSSL
 #include <openssl/pem.h>
 #include <openssl/x509.h>
@@ -55,6 +58,10 @@
 #ifdef WIN32
 #include <windows.h>
 #define sleep(x) Sleep(x*1000)
+#endif
+
+#ifdef _MSC_VER
+#include "src\msc_compat.h"
 #endif
 
 /**

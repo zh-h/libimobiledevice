@@ -24,15 +24,22 @@
 #ifdef HAVE_CONFIG_H
 #include <config.h>
 #endif
+#ifdef _MSC_VER
+#include "msc_config.h"
+#endif
+
 #include <stdio.h>
 #include <stdlib.h>
-#include <unistd.h>
 #include <string.h>
 
 #include "afc.h"
 #include "idevice.h"
 #include "common/debug.h"
 #include "endianness.h"
+
+#ifdef _MSC_VER
+#include "msc_compat.h"
+#endif
 
 /**
  * Locks an AFC client, done for thread safety stuff
