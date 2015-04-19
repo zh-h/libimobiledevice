@@ -1,14 +1,8 @@
 before_build:
   - nuget restore
-
-build:
-  project: libimobiledevice.vcxproj
-
-platform:
-  - Win32
-
-configuration:
-  - Debug
+build_script:
+  - msbuild libimobiledevice.vcxproj /p:Configuration=Debug /p:Platform=Win32 /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll"
+  - msbuild libimobiledevice.vcxproj /p:Configuration=Release /p:Platform=Win32 /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll"
 
 on_success:
   - cmd: choco install coapp
