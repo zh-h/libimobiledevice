@@ -67,7 +67,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
-    <NuGetPackageImportStamp>fe74c815</NuGetPackageImportStamp>
+    <NuGetPackageImportStamp>e360eeea</NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
@@ -93,8 +93,8 @@
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>packages\libplist.1.12\build\native\lib\Win32\v120\Debug;packages\libusbmuxd.1.0.10\build\native\lib\Win32\v120\Debug;packages\libxml2.2.7.8.7\build\native\lib\v110\Win32\Debug\dynamic\cdecl;packages\libiconv.1.14.0.11\build\native\lib\v110\Win32\Debug\dynamic\cdecl;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>libiconv.lib;libxml2.lib;ws2_32.lib;libusbmuxd.lib;libplist.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>packages\libxml2.2.7.8.7\build\native\lib\v110\$(Platform)\$(Configuration)\dynamic\cdecl;packages\libiconv.1.14.0.11\build\native\lib\v110\$(Platform)\$(Configuration)\dynamic\cdecl;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libxml2.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -102,13 +102,13 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>C:\Users\Frederik\Source\libimobiledevice-win32\libgen;.;include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.;include</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;HAVE_OPENSSL;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>packages\libplist.1.12\build\native\lib\Win32\v120\Debug;packages\libusbmuxd.1.0.10\build\native\lib\Win32\v120\Debug;packages\libxml2.2.7.8.7\build\native\lib\v110\Win32\Debug\dynamic\cdecl;packages\libiconv.1.14.0.11\build\native\lib\v110\Win32\Debug\dynamic\cdecl;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>libiconv.lib;libxml2.lib;ws2_32.lib;libusbmuxd.lib;libplist.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>packages\libxml2.2.7.8.7\build\native\lib\v110\$(Platform)\$(Configuration)\dynamic\cdecl;packages\libiconv.1.14.0.11\build\native\lib\v110\$(Platform)\$(Configuration)\dynamic\cdecl;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libxml2.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -118,15 +118,15 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>.;C:\Users\Frederik\Source\libimobiledevice-win32\libusbmuxd\include;C:\Users\Frederik\Source\libimobiledevice-win32\libplist\include;include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.;include</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;HAVE_OPENSSL;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>packages\libxml2.2.7.8.7\build\native\lib\v110\Win32\Release\dynamic\cdecl;packages\libiconv.1.14.0.11\build\native\lib\v110\Win32\Release\dynamic\cdecl;packages\libusbmuxd.1.0.10\build\native\lib\Win32\v120\Debug;packages\libplist.1.12\build\native\lib\Win32\v120\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>libiconv.lib;libxml2.lib;ws2_32.lib;libusbmuxd.lib;libplist.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>packages\libxml2.2.7.8.7\build\native\lib\v110\$(Platform)\$(Configuration)\dynamic\cdecl;packages\libiconv.1.14.0.11\build\native\lib\v110\$(Platform)\$(Configuration)\dynamic\cdecl;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libxml2.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -136,15 +136,15 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>.;C:\Users\Frederik\Source\libimobiledevice-win32\libusbmuxd\include;C:\Users\Frederik\Source\libimobiledevice-win32\libplist\include;include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.;include</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;HAVE_OPENSSL;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>C:\Users\Frederik\Source\libimobiledevice-win32\libusbmuxd\Win32\Debug;C:\Users\Frederik\Source\libimobiledevice-win32\libplist\Win32\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>libusbmuxd.lib;libplist.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>packages\libxml2.2.7.8.7\build\native\lib\v110\$(Platform)\$(Configuration)\dynamic\cdecl;packages\libiconv.1.14.0.11\build\native\lib\v110\$(Platform)\$(Configuration)\dynamic\cdecl;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libxml2.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -236,7 +236,9 @@
     <ClCompile Include="src\webinspector.c" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
@@ -247,10 +249,10 @@
     <Import Project="packages\dirent.1.13.1\build\native\dirent.targets" Condition="Exists('packages\dirent.1.13.1\build\native\dirent.targets')" />
     <Import Project="packages\libxml2.redist.2.7.8.7\build\native\libxml2.redist.targets" Condition="Exists('packages\libxml2.redist.2.7.8.7\build\native\libxml2.redist.targets')" />
     <Import Project="packages\libxml2.2.7.8.7\build\native\libxml2.targets" Condition="Exists('packages\libxml2.2.7.8.7\build\native\libxml2.targets')" />
-    <Import Project="packages\libplist.1.12\build\native\libplist.targets" Condition="Exists('packages\libplist.1.12\build\native\libplist.targets')" />
-    <Import Project="packages\libusbmuxd.1.0.10\build\native\libusbmuxd.targets" Condition="Exists('packages\libusbmuxd.1.0.10\build\native\libusbmuxd.targets')" />
     <Import Project="packages\libiconv.redist.1.14.0.11\build\native\libiconv.redist.targets" Condition="Exists('packages\libiconv.redist.1.14.0.11\build\native\libiconv.redist.targets')" />
     <Import Project="packages\libiconv.1.14.0.11\build\native\libiconv.targets" Condition="Exists('packages\libiconv.1.14.0.11\build\native\libiconv.targets')" />
+    <Import Project="packages\libusbmuxd.1.0.10.6\build\native\libusbmuxd.targets" Condition="Exists('packages\libusbmuxd.1.0.10.6\build\native\libusbmuxd.targets')" />
+    <Import Project="packages\libplist.1.12.29\build\native\libplist.targets" Condition="Exists('packages\libplist.1.12.29\build\native\libplist.targets')" />
   </ImportGroup>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
@@ -264,9 +266,9 @@
     <Error Condition="!Exists('packages\dirent.1.13.1\build\native\dirent.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\dirent.1.13.1\build\native\dirent.targets'))" />
     <Error Condition="!Exists('packages\libxml2.redist.2.7.8.7\build\native\libxml2.redist.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\libxml2.redist.2.7.8.7\build\native\libxml2.redist.targets'))" />
     <Error Condition="!Exists('packages\libxml2.2.7.8.7\build\native\libxml2.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\libxml2.2.7.8.7\build\native\libxml2.targets'))" />
-    <Error Condition="!Exists('packages\libplist.1.12\build\native\libplist.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\libplist.1.12\build\native\libplist.targets'))" />
-    <Error Condition="!Exists('packages\libusbmuxd.1.0.10\build\native\libusbmuxd.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\libusbmuxd.1.0.10\build\native\libusbmuxd.targets'))" />
     <Error Condition="!Exists('packages\libiconv.redist.1.14.0.11\build\native\libiconv.redist.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\libiconv.redist.1.14.0.11\build\native\libiconv.redist.targets'))" />
     <Error Condition="!Exists('packages\libiconv.1.14.0.11\build\native\libiconv.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\libiconv.1.14.0.11\build\native\libiconv.targets'))" />
+    <Error Condition="!Exists('packages\libusbmuxd.1.0.10.6\build\native\libusbmuxd.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\libusbmuxd.1.0.10.6\build\native\libusbmuxd.targets'))" />
+    <Error Condition="!Exists('packages\libplist.1.12.29\build\native\libplist.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\libplist.1.12.29\build\native\libplist.targets'))" />
   </Target>
 </Project>
