@@ -33,5 +33,17 @@ nuget{
             bin: Win32\Release\libimobiledevice.dll;
             symbols: Win32\Release\vc120.pdb;
         }
+
+	[x64,v120,debug] {
+            lib: x64\Debug\libimobiledevice.lib;
+            bin: x64\Debug\libimobiledevice.dll;
+            symbols: x64\Debug\vc120.pdb;
+        }
+
+	[x64,v120,release] {
+            lib: x64\Release\libimobiledevice.lib;
+            bin: x64\Release\libimobiledevice.dll;
+            symbols: x64\Release\vc120.pdb;
+        }
     }
 }
