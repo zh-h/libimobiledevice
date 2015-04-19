@@ -1,0 +1,21 @@
+before_build:
+  - nuget restore
+
+build:
+  project: libimobiledevice.vcxproj
+
+platform:
+  - Win32
+
+configuration:
+  - Debug
+
+on_success:
+  - cmd: choco install coapp
+  - ps: .\CreateNuGetPackage.ps1
+  - cmd: appveyor PushArtifact libimobiledevice.1.2.0.nupkg
+  - cmd: appveyor PushArtifact libimobiledevice.symbols.1.2.0.nupkg
+
+nuget:
+  project_feed: true
+  account_feed: true

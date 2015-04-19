@@ -1,0 +1,30 @@
+nuget{
+    nuspec{
+        id = libimobiledevice;
+        version : 1.2.0;
+        title: libimobiledevice;
+        authors: {libimobiledevice Project};
+        owners: {quamotion};
+        licenseUrl: "http://opensource.org/licenses/LGPL-2.1";
+        projectUrl: "http://www.libimobiledevice.org/";
+        iconUrl: "http://www.nuget.org/Content/Images/packageDefaultIcon-50x50.png";
+        requireLicenseAcceptance:false;
+        description: "A library to communicate with services of Apple iOS devices using native protocols.";
+        summary: "A library to communicate with services of Apple iOS devices using native protocols.";
+        copyright: "https://github.com/libimobiledevice/libimobiledevice/blob/master/AUTHORS";
+        releaseNotes: "Release 1.2.0 of libimobiledevice. See https://github.com/libimobiledevice-win32/libimobiledevice/tree/msvc-1.2.0 for more.";
+        tags: { libimobiledevice, native };
+    }
+
+    files{
+	includeplist: {
+		#destination = ${d_include}libimobiledevice;
+		"include\libimobiledevice\*.h";
+	} 
+
+	[x86,v120,debug] {
+            lib: Win32\Debug\libimobiledevice.lib;
+            symbols: Win32\Debug\vc120.pdb;
+        }
+    }
+}
