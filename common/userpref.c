@@ -38,6 +38,11 @@
 #ifndef WIN32
 #include <pwd.h>
 #endif
+
+#ifdef _MSC_VER
+#include "windows.h"
+#endif
+
 #include <usbmuxd.h>
 #ifdef HAVE_OPENSSL
 #include <openssl/pem.h>
