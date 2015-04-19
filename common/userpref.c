@@ -53,7 +53,11 @@
 #endif
 
 #include <dirent.h>
+#ifdef _MSC_VER
+#include "libgen.h"
+#else
 #include <libgen.h>
+#endif
 #include <sys/stat.h>
 #include <errno.h>
 

@@ -61,3 +61,14 @@ tools/idevicecrashreport
 cython/.libs/*
 cython/*.c
 doxygen.cfg
+
+# MSVC
+*.opensdf
+*.sdf
+*.suo
+*.user
+*.filters
+packages/
+*.nupkg
+Win32/
+x64/
