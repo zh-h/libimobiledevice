@@ -11,6 +11,7 @@ on_success:
   - ps: .\CreateNuGetPackage.ps1
   - cmd: appveyor PushArtifact libimobiledevice.1.2.0.nupkg
   - cmd: appveyor PushArtifact libimobiledevice.symbols.1.2.0.nupkg
+  - cmd: appveyor PushArtifact libimobiledevice.redist.1.2.0.nupkg
 
 nuget:
   project_feed: true
