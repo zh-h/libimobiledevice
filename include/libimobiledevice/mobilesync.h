@@ -307,16 +307,21 @@ mobilesync_error_t mobilesync_remap_identifiers(mobilesync_client_t client, plis
  *   if none is known yet which for instance is true on first synchronization.
  * @param computer_anchor An arbitrary string to use as anchor for the computer.
  *
- * @return A new #mobilesync_anchors_t struct. Must be freed using mobilesync_anchors_free().
+ * @param client Pointer that will be set to a newly allocated
+ *     #mobilesync_anchors_t struct. Must be freed using mobilesync_anchors_free().
+ *
+ * @retval MOBILESYNC_E_SUCCESS on success
  */
-mobilesync_anchors_t mobilesync_anchors_new(const char *device_anchor, const char *computer_anchor);
+mobilesync_error_t mobilesync_anchors_new(const char *device_anchor, const char *computer_anchor, mobilesync_anchors_t *anchor);
 
 /**
  * Free memory used by anchors.
  *
  * @param anchors The anchors to free.
+ *
+ * @retval MOBILESYNC_E_SUCCESS on success
  */
-void mobilesync_anchors_free(mobilesync_anchors_t anchors);
+mobilesync_error_t mobilesync_anchors_free(mobilesync_anchors_t anchors);
 
 
 /**
