@@ -711,18 +711,19 @@ LIBIMOBILEDEVICE_API mobilesync_error_t mobilesync_cancel(mobilesync_client_t cl
 
 LIBIMOBILEDEVICE_API mobilesync_error_t mobilesync_anchors_new(const char *device_anchor, const char *computer_anchor, mobilesync_anchors_t *anchor)
 {
-	anchor = (mobilesync_anchors_t) malloc(sizeof(mobilesync_anchors));
+    mobilesync_anchors_t anchors = (mobilesync_anchors_t) malloc(sizeof(mobilesync_anchors));
 	if (device_anchor != NULL) {
-		anchor->device_anchor = strdup(device_anchor);
+		anchors->device_anchor = strdup(device_anchor);
 	} else {
-		anchor->device_anchor = NULL;
+		anchors->device_anchor = NULL;
 	}
 	if (computer_anchor != NULL) {
-		anchor->computer_anchor = strdup(computer_anchor);
+		anchors->computer_anchor = strdup(computer_anchor);
 	} else {
-		anchor->computer_anchor = NULL;
+		anchors->computer_anchor = NULL;
 	}
 
+    anchor = &anchors;
 	return MOBILESYNC_E_SUCCESS;
 }
 
