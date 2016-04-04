@@ -727,7 +727,7 @@ LIBIMOBILEDEVICE_API mobilesync_error_t mobilesync_anchors_new(const char *devic
 		anchors->computer_anchor = NULL;
 	}
 
-    anchor = &anchors;
+    *anchor = anchors;
 	return MOBILESYNC_E_SUCCESS;
 }
 
