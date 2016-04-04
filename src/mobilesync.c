@@ -713,7 +713,7 @@ LIBIMOBILEDEVICE_API mobilesync_error_t mobilesync_cancel(mobilesync_client_t cl
 	return err;
 }
 
-LIBIMOBILEDEVICE_API mobilesync_error_t mobilesync_anchors_new(const char *device_anchor, const char *computer_anchor, mobilesync_anchors_t *anchor);
+LIBIMOBILEDEVICE_API mobilesync_error_t mobilesync_anchors_new(const char *device_anchor, const char *computer_anchor, mobilesync_anchors_t *anchor)
 {
 	anchors = (mobilesync_anchors_t) malloc(sizeof(mobilesync_anchors));
 	if (device_anchor != NULL) {
