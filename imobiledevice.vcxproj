@@ -96,7 +96,7 @@
       <AdditionalDependencies>ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PreLinkEvent>
-      <Command>copy "$(SolutionDir)packages\libplist.symbols.2.0.1.169\build\native\bin\$(Platform)\v140\$(Configuration)\*.pdb" "$(OutDir)"
+      <Command>copy "$(SolutionDir)packages\libplist.symbols.2.0.1.171\build\native\bin\$(Platform)\v140\$(Configuration)\*.pdb" "$(OutDir)"
 copy "$(SolutionDir)packages\libusbmuxd.symbols.1.0.10.77\build\native\bin\$(Platform)\v140\$(Configuration)\*.pdb" "$(OutDir)"</Command>
     </PreLinkEvent>
   </ItemDefinitionGroup>
@@ -114,7 +114,7 @@ copy "$(SolutionDir)packages\libusbmuxd.symbols.1.0.10.77\build\native\bin\$(Pla
       <AdditionalDependencies>ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PreLinkEvent>
-      <Command>copy "$(SolutionDir)packages\libplist.symbols.2.0.1.169\build\native\bin\$(Platform)\v140\$(Configuration)\*.pdb" "$(OutDir)"
+      <Command>copy "$(SolutionDir)packages\libplist.symbols.2.0.1.171\build\native\bin\$(Platform)\v140\$(Configuration)\*.pdb" "$(OutDir)"
 copy "$(SolutionDir)packages\libusbmuxd.symbols.1.0.10.77\build\native\bin\$(Platform)\v140\$(Configuration)\*.pdb" "$(OutDir)"</Command>
     </PreLinkEvent>
   </ItemDefinitionGroup>
@@ -136,7 +136,7 @@ copy "$(SolutionDir)packages\libusbmuxd.symbols.1.0.10.77\build\native\bin\$(Pla
       <AdditionalDependencies>ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PreLinkEvent>
-      <Command>copy "$(SolutionDir)packages\libplist.symbols.2.0.1.169\build\native\bin\$(Platform)\v140\$(Configuration)\*.pdb" "$(OutDir)"
+      <Command>copy "$(SolutionDir)packages\libplist.symbols.2.0.1.171\build\native\bin\$(Platform)\v140\$(Configuration)\*.pdb" "$(OutDir)"
 copy "$(SolutionDir)packages\libusbmuxd.symbols.1.0.10.77\build\native\bin\$(Platform)\v140\$(Configuration)\*.pdb" "$(OutDir)"</Command>
     </PreLinkEvent>
   </ItemDefinitionGroup>
@@ -158,7 +158,7 @@ copy "$(SolutionDir)packages\libusbmuxd.symbols.1.0.10.77\build\native\bin\$(Pla
       <AdditionalDependencies>ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PreLinkEvent>
-      <Command>copy "$(SolutionDir)packages\libplist.symbols.2.0.1.169\build\native\bin\$(Platform)\v140\$(Configuration)\*.pdb" "$(OutDir)"
+      <Command>copy "$(SolutionDir)packages\libplist.symbols.2.0.1.171\build\native\bin\$(Platform)\v140\$(Configuration)\*.pdb" "$(OutDir)"
 copy "$(SolutionDir)packages\libusbmuxd.symbols.1.0.10.77\build\native\bin\$(Platform)\v140\$(Configuration)\*.pdb" "$(OutDir)"</Command>
     </PreLinkEvent>
   </ItemDefinitionGroup>
@@ -269,9 +269,9 @@ copy "$(SolutionDir)packages\libusbmuxd.symbols.1.0.10.77\build\native\bin\$(Pla
     <Import Project="packages\zlib.v140.windesktop.msvcstl.dyn.rt-dyn.1.2.8.8\build\native\zlib.v140.windesktop.msvcstl.dyn.rt-dyn.targets" Condition="Exists('packages\zlib.v140.windesktop.msvcstl.dyn.rt-dyn.1.2.8.8\build\native\zlib.v140.windesktop.msvcstl.dyn.rt-dyn.targets')" />
     <Import Project="packages\openssl.v140.windesktop.msvcstl.dyn.rt-dyn.x64.1.0.2.0\build\native\openssl.v140.windesktop.msvcstl.dyn.rt-dyn.x64.targets" Condition="Exists('packages\openssl.v140.windesktop.msvcstl.dyn.rt-dyn.x64.1.0.2.0\build\native\openssl.v140.windesktop.msvcstl.dyn.rt-dyn.x64.targets')" />
     <Import Project="packages\openssl.v140.windesktop.msvcstl.dyn.rt-dyn.x86.1.0.2.0\build\native\openssl.v140.windesktop.msvcstl.dyn.rt-dyn.x86.targets" Condition="Exists('packages\openssl.v140.windesktop.msvcstl.dyn.rt-dyn.x86.1.0.2.0\build\native\openssl.v140.windesktop.msvcstl.dyn.rt-dyn.x86.targets')" />
-    <Import Project="packages\libplist.redist.2.0.1.169\build\native\libplist.redist.targets" Condition="Exists('packages\libplist.redist.2.0.1.169\build\native\libplist.redist.targets')" />
-    <Import Project="packages\libplist.2.0.1.169\build\native\libplist.targets" Condition="Exists('packages\libplist.2.0.1.169\build\native\libplist.targets')" />
-    <Import Project="packages\libplist.symbols.2.0.1.169\build\native\libplist.symbols.targets" Condition="Exists('packages\libplist.symbols.2.0.1.169\build\native\libplist.symbols.targets')" />
+    <Import Project="packages\libplist.redist.2.0.1.171\build\native\libplist.redist.targets" Condition="Exists('packages\libplist.redist.2.0.1.171\build\native\libplist.redist.targets')" />
+    <Import Project="packages\libplist.2.0.1.171\build\native\libplist.targets" Condition="Exists('packages\libplist.2.0.1.171\build\native\libplist.targets')" />
+    <Import Project="packages\libplist.symbols.2.0.1.171\build\native\libplist.symbols.targets" Condition="Exists('packages\libplist.symbols.2.0.1.171\build\native\libplist.symbols.targets')" />
     <Import Project="packages\libusbmuxd.redist.1.0.10.77\build\native\libusbmuxd.redist.targets" Condition="Exists('packages\libusbmuxd.redist.1.0.10.77\build\native\libusbmuxd.redist.targets')" />
     <Import Project="packages\libusbmuxd.1.0.10.77\build\native\libusbmuxd.targets" Condition="Exists('packages\libusbmuxd.1.0.10.77\build\native\libusbmuxd.targets')" />
     <Import Project="packages\libusbmuxd.symbols.1.0.10.77\build\native\libusbmuxd.symbols.targets" Condition="Exists('packages\libusbmuxd.symbols.1.0.10.77\build\native\libusbmuxd.symbols.targets')" />
@@ -291,9 +291,9 @@ copy "$(SolutionDir)packages\libusbmuxd.symbols.1.0.10.77\build\native\bin\$(Pla
     <Error Condition="!Exists('packages\zlib.v140.windesktop.msvcstl.dyn.rt-dyn.1.2.8.8\build\native\zlib.v140.windesktop.msvcstl.dyn.rt-dyn.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\zlib.v140.windesktop.msvcstl.dyn.rt-dyn.1.2.8.8\build\native\zlib.v140.windesktop.msvcstl.dyn.rt-dyn.targets'))" />
     <Error Condition="!Exists('packages\openssl.v140.windesktop.msvcstl.dyn.rt-dyn.x64.1.0.2.0\build\native\openssl.v140.windesktop.msvcstl.dyn.rt-dyn.x64.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\openssl.v140.windesktop.msvcstl.dyn.rt-dyn.x64.1.0.2.0\build\native\openssl.v140.windesktop.msvcstl.dyn.rt-dyn.x64.targets'))" />
     <Error Condition="!Exists('packages\openssl.v140.windesktop.msvcstl.dyn.rt-dyn.x86.1.0.2.0\build\native\openssl.v140.windesktop.msvcstl.dyn.rt-dyn.x86.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\openssl.v140.windesktop.msvcstl.dyn.rt-dyn.x86.1.0.2.0\build\native\openssl.v140.windesktop.msvcstl.dyn.rt-dyn.x86.targets'))" />
-    <Error Condition="!Exists('packages\libplist.redist.2.0.1.169\build\native\libplist.redist.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\libplist.redist.2.0.1.169\build\native\libplist.redist.targets'))" />
-    <Error Condition="!Exists('packages\libplist.2.0.1.169\build\native\libplist.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\libplist.2.0.1.169\build\native\libplist.targets'))" />
-    <Error Condition="!Exists('packages\libplist.symbols.2.0.1.169\build\native\libplist.symbols.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\libplist.symbols.2.0.1.169\build\native\libplist.symbols.targets'))" />
+    <Error Condition="!Exists('packages\libplist.redist.2.0.1.171\build\native\libplist.redist.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\libplist.redist.2.0.1.171\build\native\libplist.redist.targets'))" />
+    <Error Condition="!Exists('packages\libplist.2.0.1.171\build\native\libplist.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\libplist.2.0.1.171\build\native\libplist.targets'))" />
+    <Error Condition="!Exists('packages\libplist.symbols.2.0.1.171\build\native\libplist.symbols.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\libplist.symbols.2.0.1.171\build\native\libplist.symbols.targets'))" />
     <Error Condition="!Exists('packages\libusbmuxd.redist.1.0.10.77\build\native\libusbmuxd.redist.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\libusbmuxd.redist.1.0.10.77\build\native\libusbmuxd.redist.targets'))" />
     <Error Condition="!Exists('packages\libusbmuxd.1.0.10.77\build\native\libusbmuxd.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\libusbmuxd.1.0.10.77\build\native\libusbmuxd.targets'))" />
     <Error Condition="!Exists('packages\libusbmuxd.symbols.1.0.10.77\build\native\libusbmuxd.symbols.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\libusbmuxd.symbols.1.0.10.77\build\native\libusbmuxd.symbols.targets'))" />
