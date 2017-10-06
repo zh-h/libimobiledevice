@@ -59,6 +59,8 @@ script:
 
 after_success:
 - make install
+- if [ "$TRAVIS_OS_NAME" = "osx" ]; then cp /usr/local/opt/openssl/lib/libssl.1.0.0.dylib $HOME/out/lib; fi
+- if [ "$TRAVIS_OS_NAME" = "osx" ]; then cp /usr/local/opt/openssl/lib/libcrypto.1.0.0.dylib $HOME/out/lib; fi
 - cp $HOME/ext/bin/* $HOME/out/bin/
 - if [ "$TRAVIS_OS_NAME" = "linux" ]; then ./build/run-patchelf.sh; fi
 - if [ "$TRAVIS_OS_NAME" = "osx" ]; then ./build/patchdylib.sh; fi
