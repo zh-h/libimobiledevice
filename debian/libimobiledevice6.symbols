@@ -152,6 +152,16 @@ libimobiledevice.so.6 libimobiledevice6 #MINVER#
  mobile_image_mounter_new@Base 1.0.0
  mobile_image_mounter_start_service@Base 1.1.6
  mobile_image_mounter_upload_image@Base 1.1.6
+ mobileactivation_activate@Base 1.2.1.127-0xenial
+ mobileactivation_activate_with_session@Base 1.2.1.127-0xenial
+ mobileactivation_client_free@Base 1.2.1.127-0xenial
+ mobileactivation_client_new@Base 1.2.1.127-0xenial
+ mobileactivation_client_start_service@Base 1.2.1.127-0xenial
+ mobileactivation_create_activation_info@Base 1.2.1.127-0xenial
+ mobileactivation_create_activation_info_with_session@Base 1.2.1.127-0xenial
+ mobileactivation_create_activation_session_info@Base 1.2.1.127-0xenial
+ mobileactivation_deactivate@Base 1.2.1.127-0xenial
+ mobileactivation_get_activation_state@Base 1.2.1.127-0xenial
  mobilebackup2_client_free@Base 1.1.1
  mobilebackup2_client_new@Base 1.1.1
  mobilebackup2_client_start_service@Base 1.1.6
