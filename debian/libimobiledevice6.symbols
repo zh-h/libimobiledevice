@@ -82,10 +82,14 @@ libimobiledevice.so.6 libimobiledevice6 #MINVER#
  idevice_free@Base 0.9.7
  idevice_get_device_list@Base 0.9.7
  idevice_get_handle@Base 0.9.7
+ idevice_get_socket_type@Base 1.2.1.138-0xenial
+ idevice_get_tcp_endpoint@Base 1.2.1.138-0xenial
  idevice_get_udid@Base 1.1.4
  idevice_new@Base 0.9.7
  idevice_set_debug_callback@Base 1.2.1.97-0xenial
  idevice_set_debug_level@Base 0.9.7
+ idevice_set_socket_type@Base 1.2.1.138-0xenial
+ idevice_set_tcp_endpoint@Base 1.2.1.138-0xenial
  instproxy_archive@Base 0.9.7
  instproxy_browse@Base 0.9.7
  instproxy_browse_with_callback@Base 1.2.0
