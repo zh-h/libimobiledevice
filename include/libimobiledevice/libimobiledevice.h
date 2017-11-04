@@ -84,7 +84,7 @@ typedef struct {
 typedef void (*idevice_event_cb_t) (const idevice_event_t *event, void *user_data);
 
 /** Enables calling applications to capture debug messages from libimobiledevice */
-typedef void(*idevice_debug_cb_t) (char *message);
+typedef void(*idevice_debug_cb_t) (const char *message);
 
 /* functions */
 
