@@ -72,7 +72,7 @@ static void debug_print_line(const char *func, const char *file, int line, const
 
 	/* generate header text */
 	if(0 > asprintf(&header, "%s %s:%d %s()", str_time, file, line, func)) {
-		exit(1);
+		return;
 	}
 	free (str_time);
 
@@ -111,7 +111,7 @@ LIBIMOBILEDEVICE_API_MSC void debug_info_real(const char *func, const char *file
 	/* run the real fprintf */
 	va_start(args, format);
 	if (0 > vasprintf(&buffer, format, args)) {
-		exit(0);
+		return;
 	}
 	va_end(args);
 
